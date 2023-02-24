@@ -20,14 +20,14 @@ class Trie {
     }
   }
 
-  has(string){
+  has(string) {
     let curNode = this.root;
-    for(const char of string){
-       if (!currentNode.children.has(char)) {
+    for (const char of string) {
+      if (!currentNode.children.has(char)) {
         return false;
       }
-      currentNode = currentNode.children.get(char);
+      curNode = currentNode.children.get(char);
     }
-    return true; 
+    return true;
   }
 }
