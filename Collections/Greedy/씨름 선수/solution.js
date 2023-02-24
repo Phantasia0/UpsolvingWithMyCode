@@ -46,3 +46,5 @@ function solution(n, arr) {
 }
 
 solution(n, arr);
+
+//DFS 백트래킹 가지치기

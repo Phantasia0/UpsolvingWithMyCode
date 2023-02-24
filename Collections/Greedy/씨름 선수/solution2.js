@@ -37,3 +37,4 @@ function solution(n, arr) {
 }
 
 solution(n, arr);
+//이중 포문 Version
