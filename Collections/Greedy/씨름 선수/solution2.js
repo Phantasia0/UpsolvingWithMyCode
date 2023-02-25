@@ -5,7 +5,7 @@ const input = require("fs")
   .split("\n");
 
 const n = parseInt(input[0]);
-const arr = Array.from(Array(5), () => []);
+const arr = [];
 for (let i = 0; i < n; i++) {
   arr[i] = Array.from(input[i + 1].trim().split(" ")).map((v) => parseInt(v));
 }

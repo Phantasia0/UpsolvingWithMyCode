@@ -1,9 +1,9 @@
 const fs = require("fs");
-const [n, input] = fs.readFileSync("input.txt").toString().trim().split("\n");
-const inputArr = input.trim().split(" ");
+const [ns, inputss] = fs.readFileSync("input.txt").toString().trim().split("\n");
+const inputArr = inputss.trim().split(" ");
 
 const num = parseInt(n);
-const arr = inputArr.map((v) => parseInt(v));
+const arrs = inputArr.map((v) => parseInt(v));
 
 // or I am convenience with This
 
@@ -24,3 +24,19 @@ const inputs = require('fs').readFileSync("/dev/stdin").toString().trim().split(
 //     parseInt(v)
 //   );
 // }
+
+
+//Question Form Reference <<< 귀찮아서 복사 이후 입력에 맞게 끔 형태 변경 or 변수명 변경
+const input = require("fs")
+  .readFileSync("input.txt")
+  .toString()
+  .trim()
+  .split("\n");
+
+const n = parseInt(input[0].trim());
+const arr = Array.from(input[1].trim().split(" ")).map((v) => parseInt(v));
+
+function solution(n,arr){
+    
+}
+
