@@ -187,5 +187,6 @@ class MinHeapVersion2 {
       leftIndex = currentIndex * 2;
       rightIndex = currentIndex * 2 + 1;
     }
+    return returnValue;
   }
 }

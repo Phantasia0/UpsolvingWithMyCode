@@ -35,7 +35,7 @@ class MaxHeap {
       if (this.heap[rIdx] === undefined) {
         this._swap(lIdx, curIdx);
         curIdx = lIdx;
-      } else if (this.heap[rIdx] < this.heap[lIdx]) {
+      } else if (this.heap[rIdx] <= this.heap[lIdx]) {
         this._swap(lIdx, curIdx);
         curIdx = lIdx;
       } else if (this.heap[rIdx] > this.heap[lIdx]) {
