@@ -23,3 +23,5 @@ function solution(n, m, arr) {
 }
 
 solution(n, m, arr);
+
+//냅색 알고리즘
