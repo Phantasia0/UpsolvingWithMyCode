@@ -12,21 +12,22 @@ for (let i = 0; i < n; i++) {
 arr.unshift([0, 0]);
 
 max = 0;
-function DFS(sum, s) {
-  if (s > n + 1) {
-    return;
-  }
 
-  if (s <= n + 1) {
-    max = Math.max(sum, max);
-    for (let i = s; i < n + 1; i++) {
-      DFS(sum + arr[i][1], i + arr[i][0]);
+function DFS(L, sum) {
+  if (L === n + 1) {
+    if (sum > max) {
+      max = sum;
     }
+  } else {
+    if (L + arr[L][0] <= n + 1) {
+      DFS(L + arr[L][0], sum + arr[L][1]);
+    }
+    DFS(L + 1, sum);
   }
 }
 
 function solution(n, arr) {
-  DFS(0, 1);
+  DFS(1, 0);
   console.log(max);
 }
 
